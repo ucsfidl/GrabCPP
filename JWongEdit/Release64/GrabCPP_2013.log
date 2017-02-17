@@ -1,0 +1,28 @@
+﻿Build started 9/7/2016 12:41:58 PM.
+     1>Project "C:\src\Sapera\Examples\Classes\GrabConsole\JWongEdit\GrabCPP_2013.vcxproj" on node 2 (Build target(s)).
+     1>PreBuildEvent:
+         if exist %SystemRoot%\SysWOW64 goto end
+         echo (Sapera LT warning) Compiling a 64-bit configuration under 32-bit Windows
+         :end
+         
+         :VCEnd
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I..\..\Common /I..\..\..\..\Classes\Basic /I..\..\..\..\include /I..\..\..\..\externals\CorLib /Zi /nologo /W3 /WX- /O2 /Ob1 /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0710 /D _USING_V110_SDK71_ /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release64\\" /Fd".\Release64\vc120.pdb" /Gd /TP /errorReport:prompt ..\GrabCPP.cpp
+         GrabCPP.cpp
+     1>..\GrabCPP.cpp(421): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>..\GrabCPP.cpp(461): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>..\GrabCPP.cpp(463): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>..\GrabCPP.cpp(466): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"Release64\GrabCPP.exe" /INCREMENTAL:NO /NOLOGO ..\..\..\..\Lib\Win64\SapClassBasic.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\Release64\GrabCPP.pdb" /SUBSYSTEM:CONSOLE,"5.02" /OPT:NOREF /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Release64\GrabCPP.lib" /MACHINE:X64 Release64\GrabCPP.res
+         .\Release64\ExampleUtils.obj
+         .\Release64\GrabCPP.obj
+         GrabCPP_2013.vcxproj -> C:\src\Sapera\Examples\Classes\GrabConsole\JWongEdit\Release64\GrabCPP.exe
+     1>Done Building Project "C:\src\Sapera\Examples\Classes\GrabConsole\JWongEdit\GrabCPP_2013.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.32
